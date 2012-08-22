@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.portlet.nivoslider">
+
+  <browser:resourceDirectory
+    name="collective.portlet.nivoslider"
+    directory="resources"
+    />
+
+  <include file="upgrades.zcml"/>
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.portlet.nivoslider"
+      directory="profiles/default"
+      description='Extension profile for collective.portlet.nivoslider.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>
