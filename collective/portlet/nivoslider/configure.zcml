@@ -2,6 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="collective.portlet.nivoslider">
 
   <browser:resourceDirectory
@@ -18,5 +19,21 @@
       description='Extension profile for collective.portlet.nivoslider.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+
+  <permission
+    id="collective.portlet.nivoslider.AddSliderPortlet"
+    title="collective.portlet.nivoslider: Add slider portlet"
+    />
+
+  <plone:portlet
+    name="collective.portlet.nivoslider.SliderPortlet"
+    interface=".portlet.ISliderPortlet"
+    assignment=".portlet.Assignment"
+    view_permission="zope2.View"
+    edit_permission="collective.portlet.nivoslider.AddSliderPortlet"
+    renderer=".portlet.Renderer"
+    addview=".portlet.AddForm"
+    editview=".portlet.EditForm"
+    />
 
 </configure>

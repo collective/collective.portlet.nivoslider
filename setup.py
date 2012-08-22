@@ -13,10 +13,10 @@ setup(name='collective.portlet.nivoslider',
       classifiers=[
         "Programming Language :: Python",
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      keywords='plone portlet nivoslider',
+      author='JeanMichel FRANCOIS aka toutpt',
+      author_email='toutpt@gmail.com',
+      url='https://github.com/collective/collective.portlet.nivoslider',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective', 'collective.portlet'],
@@ -24,6 +24,7 @@ setup(name='collective.portlet.nivoslider',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'collective.js.nivoslider',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
