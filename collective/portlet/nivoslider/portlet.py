@@ -48,7 +48,7 @@ class Assignment(base.Assignment):
     """
 
     implements(ISliderPortlet)
-    title = _(u"Slider portlet")
+    title = _(u"NivoSlider portlet")
     target_folder = None
 
     def __init__(self, target_folder=None):
@@ -114,7 +114,7 @@ class AddForm(base.AddForm):
     form_fields = form.Fields(ISliderPortlet)
     form_fields['target_folder'].custom_widget = UberSelectionWidget
     label = _(u"title_add_slider_portlet",
-              default=u"Add slider portlet")
+              default=u"Add NivoSlider portlet")
     description = _(u"description_slider_portlet",
                     default=u"A portlet which display a slider")
 
@@ -131,6 +131,6 @@ class EditForm(base.EditForm):
     form_fields = form.Fields(ISliderPortlet)
     form_fields['target_folder'].custom_widget = UberSelectionWidget
     label = _(u"title_edit_slider_portlet",
-              default=u"Edit slider text portlet")
+              default=u"Edit NivoSlider portlet")
     description = _(u"description_slider_portlet",
                     default=u"A portlet which display a slider")

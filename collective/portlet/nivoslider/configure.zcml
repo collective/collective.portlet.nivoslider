@@ -2,15 +2,14 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="collective.portlet.nivoslider">
 
-  <browser:resourceDirectory
-    name="collective.portlet.nivoslider"
-    directory="resources"
-    />
-
+  <include package="collective.js.nivoslider"/>
   <include file="upgrades.zcml"/>
+
+  <i18n:registerTranslations directory="locales" />
 
   <genericsetup:registerProfile
       name="default"

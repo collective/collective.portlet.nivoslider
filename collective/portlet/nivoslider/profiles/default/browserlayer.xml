@@ -1,6 +1,0 @@
-<layers>
-<!-- uncomment to activate
-    <layer name="collective.portlet.nivoslider"
-           interface="collective.portlet.nivoslider.interfaces.ILayer" />
--->
-</layers>
